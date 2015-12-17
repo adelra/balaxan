@@ -25,7 +25,14 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
-  </head>
+
+<script>
+  audiojs.events.ready(function() {
+    var as = audiojs.createAll();
+  });
+</script>
+
+	</head>
 
   <body>
 
@@ -55,7 +62,9 @@
 					<h1>Bàlà Xàn (Balaxan) Corpus of Kurmanji. <br> The first Kurmanji Speech corpus.</h1>
 				</div><!-- /col-lg-6 -->
 				
-				
+				<div class="col-lg-6">
+					<img class="img-responsive" src="assets/img/i.png" alt="">
+				</div><!-- /col-lg-6 -->
 			</div><!-- /row -->
 		</div><!-- /container -->
 	</div><!-- /headerwrap -->
@@ -84,10 +93,20 @@
 
 			</div><!--/col-lg-4 -->
 		</div><!-- /row -->
+			<p class="center"> You can download the corpus here: 
+	<li><a href="imperative.rar">imperative</a></li>
+	<li><a href="interrogative.rar">interrogative</a></li>
+	<li><a href="exclamatory.rar">exclamatory</a></li>
+	<li><a href="declarative.rar">declarative</a></li>
+	<br>
+	You can listen to samples:
+	<audio src="/mp3/juicy.mp3" preload="auto" />
+	</p>		
 	</div><!-- /container -->
-<p class="centered"> Balaxan (Bàlàxàn, Balakhan, or written seperately: Bala Xan) was one of the first Kurds entered <a href="https://en.wikipedia.org/wiki/Amarlu_District">Amarlu district</a> in Guilan, Iran </p>
 
 		<hr>
+<p class="centered"> Balaxan (Bàlàxàn, Balakhan, or written seperately: Bala Xan) was one of the first Kurds entered <a href="https://en.wikipedia.org/wiki/Amarlu_District">Amarlu district</a> in Guilan, Iran </p>
+
 		<p class="centered">Copyright by Adel Rahimi - Attribution License 4.0<br><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Dataset" property="dct:title" rel="dct:type">Balaxan Corpus of Kurmanji</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://adelra.github.io" property="cc:attributionName" rel="cc:attributionURL">Adel Rahimi</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
 	</div><!-- /container -->
 	
@@ -97,5 +116,6 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
+	<script src="/audiojs/audio.min.js"></script>
   </body>
 </html>
